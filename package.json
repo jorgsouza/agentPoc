@@ -1,0 +1,49 @@
+{
+  "name": "agent-rag",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/cli.js",
+    "index-confluence": "node src/application/indexer/confluenceIndexer.js",
+    "lint": "eslint .",
+    "test": "node --test \"src/**/*.test.js\"",
+    "test:unit": "node --test \"src/**/*.unit.test.js\"",
+    "test:integration": "node --test \"src/**/*.integration.test.js\"",
+    "start:qdrant": "docker-compose up -d",
+    "stop:qdrant": "docker-compose down"
+  },
+  "keywords": [
+    "AI",
+    "RAG",
+    "Node.js"
+  ],
+  "author": "Jorge Souza",
+  "license": "ISC",
+  "description": "An AI-powered Retrieval-Augmented Generation (RAG) agent for analyzing files, Jira tickets, and Confluence documentation.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgesouza/agent-rag.git"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@pinecone-database/pinecone": "^5.1.1",
+    "axios": "^1.8.3",
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "chrome-cookies-secure": "^3.0.0",
+    "cli-highlight": "^2.1.11",
+    "cli-table3": "^0.6.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.7",
+    "ignore": "^7.0.3",
+    "minimatch": "^10.0.1",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.12.1",
+    "node-fetch": "^3.3.2",
+    "open": "^10.1.0",
+    "puppeteer": "^24.4.0",
+    "readline-sync": "^1.4.10",
+    "sqlite3": "^5.1.7"
+  }
+}

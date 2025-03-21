@@ -1,0 +1,62 @@
+
+#LLM'S
+
+    # GEMINI API
+        GEMINI_API_KEY=AIzaSyBGKCC7-aqDcqzGKktACmPwL8zKyhHEY7E
+        GEMINI_MODEL=gemini-2.0-flash
+
+    # OPEN AI API
+    OPENAI_API_KEY=your_openai_api_key
+
+    # INTERNAL SERVER AI
+        INTERNAL_SERVER_URL=http://10.74.6.4:11434/api/generate
+        MODEL_NAME=codegemma
+
+
+#VECTOR DATABASE
+VECTOR_DB_PROVIDER=pinecone # Alternar entre 'pinecone' e 'qdrant'
+
+    #PINECONE
+        PINECONE_API_KEY=pcsk_2T7GhK_FcQf5ZTEFCrsnpgUSXmPrEzjWSMgNPjn9ZGZopmUHyG24AJQVM3sxsZyQirJaiH
+        PINECONE_ENVIRONMENT=us-east-1
+        PINECONE_INDEX=documentos
+        PINECONE_DIMENSIONS=768
+        PINECONE_HOST=https://documentos-bfc38ud.svc.aped-4627-b74a.pinecone.io
+
+    #QDRANT
+        QDRANT_BASE_URL=http://localhost:6333
+
+#DATABASE
+    # MONGO DB
+        MONGO_URI=mongodb+srv://jorgesouza:vAlMqo2O3h7qwGTS@mongolito.wvbol.mongodb.net/agent-rag
+        MONGO_DB_NAME=agent_rag
+
+#JIRA
+    JIRA_USER=jorge.souza@reclameaqui.com.br
+    JIRA_TOKEN=ATATT3xFfGF0SKgsoLvtqDSBu4qh1Rf8zehOinTPEPLn6K1-1PNlemWsazOBnacTAtzByorGbb7XgIpDZgDVdynytZRqDxlVaEYPcVNCP1Akf0pO_iKPhiUmiyfLLs3B-_a1_A58xWQD0eq3Qmwb2LM5tku_QTXFLj5Eti2aw3sy1r_ZZwxc8rY=7BE0200D
+    JIRA_BASE_URL=https://reclameaqui.atlassian.net
+    JIRA_BOARD_ID=455,451,452,453
+    JIRA_SEARCH_ENDPOINT=/rest/api/3/search?jql=Sprint={sprintId}
+    JIRA_AGILE_BASE_URL=https://reclameaqui.atlassian.net/rest/agile/1.0
+
+# CONFLUENCE API
+    CONFLUENCE_BASE_URL=https://reclameaqui.atlassian.net
+    CONFLUENCE_USERNAME=jorge.souza@reclameaqui.com.br
+    CONFLUENCE_API_TOKEN=ATATT3xFfGF0SKgsoLvtqDSBu4qh1Rf8zehOinTPEPLn6K1-1PNlemWsazOBnacTAtzByorGbb7XgIpDZgDVdynytZRqDxlVaEYPcVNCP1Akf0pO_iKPhiUmiyfLLs3B-_a1_A58xWQD0eq3Qmwb2LM5tku_QTXFLj5Eti2aw3sy1r_ZZwxc8rY=7BE0200D
+    CONFLUENCE_PAGE_IDS=2772435196,2804285460  # IDs das páginas separadas por vírgula
+    CONFLUENCE_SPACE_KEY=TRD
+
+#BITBUCKET
+    BITBUCKET_BASE_URL=https://api.bitbucket.org/2.0
+    BITBUCKET_USER=JorgLSouza
+    BITBUCKET_TOKEN=ATBBaT3VWuk8trSqw2A7uJkZhJ82FA21BA3A
+    BITBUCKET_PROJECT_KEY=obviobrasil
+    BITBUCKET_REPO_SLUG=ra-registrations
+
+#BYPASS TLS
+    NODE_TLS_REJECT_UNAUTHORIZED=0
+
+#SHOULD_BE_DEPLOY
+    DEPLOY_STATUS_URL=https://shouldideploy.today/api?tz=UTC
+
+

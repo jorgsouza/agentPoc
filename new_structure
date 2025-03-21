@@ -1,0 +1,34 @@
+src/
+├── application/         # Orquestra casos de uso e interage com domain/infrastructure
+│   ├── usecases/
+│   │   ├── analyzeCode.js
+│   │   ├── analyzeJira.js
+│   │   └── searchConfluence.js
+│   ├── cli/
+│   │   ├── cliHandler.js
+│   │   └── cliCommands.js
+│   ├── services/
+│   │   ├── CodeAnalysisService.js
+│   │   ├── JiraService.js
+│   │   └── ConfluenceService.js
+├── domain/              # Modelos, Entidades, Regras de Negócio
+│   ├── models/
+│   │   ├── CodeAnalysis.js
+│   │   ├── JiraTicket.js
+│   │   └── ConfluenceDoc.js
+│   ├── repositories/
+│   │   ├── CodeRepository.js
+│   │   ├── JiraRepository.js
+│   │   └── ConfluenceRepository.js
+├── infrastructure/      # Adaptações técnicas (APIs, DBs, etc.)
+│   ├── vectorDB/
+│   │   ├── PineconeAdapter.js
+│   ├── jira/
+│   │   ├── JiraApi.js
+│   │   ├── JiraAuth.js
+│   ├── bitbucket/
+│   │   ├── BitbucketApi.js
+├── config/             # Configuração do agente, variáveis de ambiente
+├── interface/          # CLI e outros meios de interação com o usuário
+│   ├── cliInterface.js
+│   ├── fileAnalyzer.js
